@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home = () => (
   <div className="container">
@@ -46,6 +47,14 @@ const Home = () => (
         </a>
       </div>
     </main>
+
+    <div>
+      Navigate TEST<br />
+      
+      <Link href="/about"><a>Go to About</a></Link><br />
+      <Link href="/posts/1"><a>Go to Posts 1</a></Link><br />
+      <Link href="/posts/2"><a>Go to Posts 2</a></Link>
+    </div>
 
     <footer>
       <a
